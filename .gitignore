@@ -1,0 +1,26 @@
+# Gradle / JVM
+.gradle/
+.gradle-bootstrap/
+build/
+out/
+run/
+*.class
+*.log
+*.tmp
+hs_err_pid*
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Local tooling / misc
+bin/
+tmp/
+libs/
+devlibs/
+.DS_Store
+Thumbs.db
+
+# Generated resources
+buildSrc/

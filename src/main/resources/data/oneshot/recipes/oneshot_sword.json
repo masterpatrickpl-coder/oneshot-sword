@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    " D ",
+    " S "
+  ],
+  "key": {
+    "D": { "item": "minecraft:nether_star" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "oneshot:oneshot_sword", "count": 1 }
+}

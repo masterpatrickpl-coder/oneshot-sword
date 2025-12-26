@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "oneshot",
+  "version": "1.0.0",
+  "name": "One-Shot Sword",
+  "description": "Adds an overpowered one-shot sword with extreme buffs/debuffs.",
+  "authors": ["generated"],
+  "entrypoints": {
+    "main": [
+      "com.example.oneshot.OneShotMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "fabric": "*",
+    "minecraft": "1.21.11"
+  }
+}
