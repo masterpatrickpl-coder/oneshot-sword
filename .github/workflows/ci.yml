@@ -25,8 +25,10 @@ jobs:
       - name: Validate Gradle wrapper
         uses: gradle/actions/wrapper-validation@v4
 
-      - name: Build
+      - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: wrapper
-          arguments: clean build --no-daemon
+
+      - name: Build
+        run: ./gradlew clean build --no-daemon
