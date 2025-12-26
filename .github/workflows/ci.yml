@@ -37,11 +37,17 @@ jobs:
         with:
           gradle-version: wrapper
 
-      - name: Build
+      - name: Build (with configuration cache)
         shell: bash
         run: |
           if [ "$RUNNER_OS" = "Windows" ]; then
-            ./gradlew.bat clean build --no-daemon
+            ./gradlew.bat clean build --no-daemon --configuration-cache
           else
-            ./gradlew clean build --no-daemon
+            ./gradlew clean build --no-daemon --configuration-cache
           fi
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: oneshot-jar
+          path: build/libs/*.jar
