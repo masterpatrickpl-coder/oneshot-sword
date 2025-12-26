@@ -1,11 +1,7 @@
-OneShot Sword — Fabric mod for Minecraft 1.21.11
+OneShot Sword — Fabric mod for Minecraft
 
 Overpowered sword that deletes most mobs/players on hit and buffs the attacker. Single-player or controlled servers only.
 
-Stack
-- Fabric Loader 0.18.1, Fabric API 0.139.5+1.21.11
-- Fabric Loom 1.14.6, Gradle 9.2.1 (wrapper included)
-- Java 21 (Temurin 21.0.9 tested)
 
 Build (PowerShell)
 ```powershell
