@@ -26,6 +26,13 @@ public class OneShotHandler {
             livingAttacker = (net.minecraft.entity.LivingEntity) attacker;
         }
 
+        // For players, wipe inventory before kill so nothing drops
+        if (target instanceof PlayerEntity playerTarget) {
+            try {
+                playerTarget.getInventory().clear();
+            } catch (Throwable ignored) {}
+        }
+
         // Attempt a proper instant-kill using DamageSources when attacker exists
         if (livingAttacker != null) {
             try {
