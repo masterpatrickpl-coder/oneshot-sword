@@ -49,5 +49,5 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: oneshot-jar
+          name: oneshot-jar-${{ matrix.os }}
           path: build/libs/*.jar
