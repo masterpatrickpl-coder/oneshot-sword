@@ -5,7 +5,7 @@ Overpowered sword that deletes most mobs/players on hit and buffs the attacker. 
 
 Build (PowerShell)
 ```powershell
-./gradlew.bat clean build
+.\gradlew.bat clean build
 ```
 Jar: build/libs/
 
