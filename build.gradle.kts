@@ -7,7 +7,7 @@ plugins {
 
 val minecraftVersion = "1.21.11"
 val yarnMappings = "1.21.11+build.1"
-val loaderVersion = "0.18.1"
+val loaderVersion = "0.18.2"
 val fabricApiVersion = "0.139.5+1.21.11"
 
 repositories {
